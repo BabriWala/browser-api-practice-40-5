@@ -6,7 +6,7 @@ Undefined = You have declared a value but not assigned a value or initialized
 Null = it is an assignment value. It can be assgin in a value to represent that it has no value
 
 let name;
-console.log(typeof name);  // undefined
+console.log(typeof name); // undefined
 name = 'Hanzala';
 console.log(typeof name); // String
 
@@ -18,29 +18,41 @@ console.log(typeof undefined); // Undefined
 console.log(typeof null); // Object
 
 // undefined mane kisuina abr null maneo kisuina tai eita true but
-// undefined is undefined but null is Object so they are not same bro 
+// undefined is undefined but null is Object so they are not same bro
 console.log(undefined == null);
 console.log(undefined === null);
 
 2. == Vs ===
 
-//  == || just value check kore
-// === || value + data type o check kore 
+Avoid “==” and use “===”. The double equal sign (==) performs abstract equality comparison and Triple equal sign (===) perform strict equality comparison.
+
+Type Coercion
+
+// == || just value check kore
+// === || value + data type o check kore
 
 // == jokhon use kori tokhon js string k number e convert kore then check kore
-// == string number main convert hoye jai 
+// == string number main convert hoye jai
 
 console.log(1 == '1')
 console.log(1 === '1')
 
 3. Scope: block, function, global
+
 4. Closure
 5. Hoisting
 6. callBack Function
+
+In JavaScript We can pass a function as argument. And that function which is passed as an argument inside of another function called callback function
+
+The benefit of using a callback function is that you can wait for the result of a previous function call and then execute another function call.
+
+Note: The callback function is helpful when you have to wait for a result that takes time. For example, the data coming from a server because it takes time for data to arrive.
+
 7. Arguments. What is array like objects
 8. Array Vs array like object
 9. Truthy and falsy Value
-   
+
 Six Falsy Value in JS
 
 // Truthy or Falsy Value
