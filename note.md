@@ -1,6 +1,27 @@
 JS Concepts:
 
 1. Null Vs Undefined
+
+Undefined = You have declared a value but not assigned a value or initialized
+Null = it is an assignment value. It can be assgin in a value to represent that it has no value
+
+let name;
+console.log(typeof name);  // undefined
+name = 'Hanzala';
+console.log(typeof name); // String
+
+// Null Looks Like an Bug
+let player = null;
+console.log(typeof player);
+
+console.log(typeof undefined); // Undefined
+console.log(typeof null); // Object
+
+// undefined mane kisuina abr null maneo kisuina tai eita true but
+// undefined is undefined but null is Object so they are not same bro 
+console.log(undefined == null);
+console.log(undefined === null);
+
 2. == Vs ===
 3. Scope: block, function, global
 4. Closure
@@ -9,15 +30,19 @@ JS Concepts:
 7. Arguments. What is array like objects
 8. Array Vs array like object
 9. Truthy and falsy Value
-   // Truthy or Falsy Value
-   console.log(Boolean(false));
-   console.log(Boolean(0));
-   console.log(Boolean(-0));
-   console.log(Boolean(0n));
-   console.log(Boolean(""));
-   console.log(Boolean(null));
-   console.log(Boolean(undefined));
-   console.log(Boolean(NaN));
+   
+Six Falsy Value in JS
+
+// Truthy or Falsy Value
+console.log(Boolean(false));
+console.log(Boolean(0));
+console.log(Boolean(-0));
+console.log(Boolean(0n));
+console.log(Boolean(""));
+console.log(Boolean(null));
+console.log(Boolean(undefined));
+console.log(Boolean(NaN));
+Document.all is Falsy
 
 // Truthy Value
 console.log('Truthy Value');
@@ -31,6 +56,8 @@ console.log(Boolean(" "));
 
 ! = not Operator
 !! = Not Not Operator or Double Bang Operator
+Boolean Constructor
+Dobule Negative
 
 let myName = "Hanzala";
 
